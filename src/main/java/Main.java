@@ -18,10 +18,16 @@ public class Main {
 
     private TreeMap<String, TreeMap<ForceType, Integer>> forceMap = new TreeMap<>();
 
+    /**
+     * Constructs a new instance of the Main class.
+     */
     public Main(){
 
     }
 
+    /**
+     * @return the force map
+     */
     public TreeMap<String, TreeMap<ForceType, Integer>> getForceMap() {return forceMap;}
 
     private TreeMap<ForceType, Integer> innerMapMaker(String[] fields) {
@@ -33,6 +39,12 @@ public class Main {
         return map;
     }
 
+    /**
+     * Reads the data from the given file and populates the force map.
+     * 
+     * @param file the file to read
+     * @throws FileNotFoundException if the file is not found
+     */
     public void readFile(File file) throws FileNotFoundException{
         Scanner in = new Scanner(file);
         in.nextLine();
