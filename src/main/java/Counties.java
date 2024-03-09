@@ -67,7 +67,7 @@ public enum Counties {
         return policeDepartments;
     }
 
-    public static String findCountyName(String pdName) {
+    public static String findCountyByPD(String pdName) {
         for (Counties county : Counties.values()) {
             if (county.getPD().contains(pdName)) {
                 return county.name();
@@ -75,6 +75,5 @@ public enum Counties {
         }
         return "County not found";
     }
-
 }
 
