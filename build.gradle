@@ -2,14 +2,16 @@ plugins {
     id 'java'
 }
 
+jar{
+  manifest {
+    attributes 'Main-Class': 'src.main.java.Main'
+  }
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
 
-}
-
-test {
-    useJUnitPlatform()
 }
