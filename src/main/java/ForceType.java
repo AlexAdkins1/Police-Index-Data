@@ -7,8 +7,8 @@ public enum ForceType {
     DischargedChemAgent,
     DisplayedElecWpn,
     DischargedElecWpn,
-    Chokehold,
+    BodilyRestraint,
     BodilyInjury,
-    MURDER,
+    BodilyDeath,
     NotReported;
 }
