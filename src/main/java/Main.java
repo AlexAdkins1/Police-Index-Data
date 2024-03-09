@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+@SuppressWarnings("unused")
 public class Main {
     
     private final static String FILE2020 = "2020.csv";
