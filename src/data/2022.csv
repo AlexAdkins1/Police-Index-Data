@@ -145,7 +145,7 @@ New York State Park Police,7,8,0,0,0,0,3,1,0,0,0,0,0,0
 New York State Environmental Conservation Police,8,8,0,0,0,0,1,1,0,0,0,0,0,0
 New York State Environ Convser Div Forest Ranger,3,8,2,0,1,14,4,6,0,0,0,0,0,0
 New York City Region Park PD,2,8,0,0,0,0,0,1,0,0,0,0,0,0
-New York City Police Department,"1,504",8,17,0,0,0,10,3,0,0,0,0,0,0
+New York City Police Department,1504,8,17,0,0,0,10,3,0,0,0,0,0,0
 New York City Metro Transportation Authority,80,8,3,0,0,1,1,1,2,0,0,0,0,0
 New Windsor Town PD,9,8,0,0,0,0,2,2,0,0,0,0,0,0
 New Rochelle City PD,33,8,0,0,0,0,1,0,0,0,0,0,0,0
@@ -169,12 +169,12 @@ Maybrook Vg PD,1,10,6,0,5,2,4,1,0,0,0,0,0,0
 Massena Vg PD,1,10,44,0,0,0,15,1,0,0,0,0,0,0
 Marlborough Town PD,3,10,9,0,0,0,4,2,0,0,0,0,0,0
 Manlius Town PD,6,11,5,0,5,8,80,17,2,0,0,0,0,0
-Mamaroneck Vg PD,19,11,,65,,169,,"1,529",,76,,,,8
+Mamaroneck Vg PD,19,11,,65,,169,,1529,,76,,,,8
 Malone Vg PD,1,11,0,0,0,0,1,1,0,0,0,0,0,0
 Madison County Sheriff,24,11,8,0,0,0,0,0,0,0,0,0,0,0
 Macedon Town and Vg PD,1,11,3,0,0,0,0,0,0,0,0,0,0,0
 Lynbrook Vg PD,4,12,5,0,1,0,2,0,0,0,0,0,0,0
-Lowville Vg PD,1,12,"1,123",6,11,15,178,93,5,2,0,3,2,0
+Lowville Vg PD,1,12,1123,6,11,15,178,93,5,2,0,3,2,0
 Long Island Region Park PD,4,12,1,0,0,0,2,1,0,0,0,0,0,0
 Long Beach City PD,1,12,69,0,1,6,10,13,0,0,0,0,0,0
 Lockport City PD,17,12,7,0,0,0,3,0,0,0,0,0,0,0
@@ -314,5 +314,5 @@ Amityville Vg PD,3,290,0,0,0,0,0,1,0,0,0,0,0,0
 Amherst Town PD,93,303,9,0,0,4,0,3,0,0,0,0,0,0
 Alfred Vg PD,7,451,0,0,0,3,3,3,0,0,9,0,0,0
 Albion Vg PD,7,881,87,3,0,0,19,16,0,1,0,0,0,0
-Albany County Sheriff,93,"1,438",20,0,0,0,3,0,0,0,0,0,0,0
-Albany City PD,32,"1,847",0,0,0,0,0,1,0,0,0,0,0,0
+Albany County Sheriff,93,1438,20,0,0,0,3,0,0,0,0,0,0,0
+Albany City PD,32,1847,0,0,0,0,0,1,0,0,0,0,0,0
