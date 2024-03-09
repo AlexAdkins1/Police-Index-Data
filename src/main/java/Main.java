@@ -41,9 +41,6 @@ public class Main {
     private TreeMap<ForceType, Integer> innerMapMaker(String[] fields) {
         TreeMap<ForceType, Integer> map = new TreeMap<>();
         ForceType[] forceTypeList = ForceType.values();
-        for (String f: fields) {
-            System.out.println(f);
-        }
         for (int i=0; i < forceTypeList.length; i++) {
             if (fields[i+1].equals("")) {
                 map.put(forceTypeList[i], null);
