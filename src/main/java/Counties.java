@@ -1,6 +1,5 @@
 import java.util.List;
 
-
 public enum Counties {
     ALBANY(List.of("Albany City PD", "Albany County Sheriff", "Altamont Vg PD", "Bethlehem Town PD", "Coeymans Town PD", "Cohoes City PD", "Colonie Town PD", "Green Island Vg PD", "Guilderland Town PD", "Menands Vg PD", "SUNY Police - Albany", "SUNY Police - Nanoscale", "Watervliet City PD")),
     ALLEGANY(List.of("Alfred Vg PD", "Allegany County Sheriff", "Andover Vg PD", "Angelica Vg PD", "Belmont Vg PD", "Bolivar Vg PD", "Cuba Town PD", "Friendship Town PD", "Independence Town PD", "SUNY Police - Alfred", "Wellsville Vg PD")),
@@ -68,14 +67,13 @@ public enum Counties {
         return policeDepartments;
     }
 
-    public String findCountyName(String pdName) {
+    public static String findCountyName(String pdName) {
         for (Counties county : Counties.values()) {
             if (county.getPD().contains(pdName)) {
                 return county.name();
             }
         }
         return "County not found";
-        
     }
 
 }
