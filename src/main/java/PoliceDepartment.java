@@ -1,37 +1,17 @@
-import java.util.Dictionary;
-import java.util.TreeMap;
-
-
-/**
- * reads from csv that organizes police force incidents per department, each dataset
- * and therefore class represents a certain year 
- */
 public class PoliceDepartment{
 
-    /**
-     * file that the class is reading from
-     */
-    private String file;
+    private final String name;
+    private final int numOfficers;
+    private final int useOfForce;
 
-    private int year;
-    
-
-    /**
-     * Tree map where
-     * K=Police Dept name,
-     * V=Dictionary{K=Type of force, V=# of incidents}
-     */
-    private TreeMap<String, Dictionary<ForceType, Integer>> nameMap = new TreeMap();
-
-    public PoliceDepartment(String file){
-        this.file = file;
-        this.year = Integer.parseInt(file); // <== TEMPORARY UNTIL I FIGURE OUT HOW IMMA FIND THE YEAR
+    PoliceDepartment(String name, int numOfficers, int useOfForce){
+        this.name = name;
+        this.numOfficers = numOfficers;
+        this.useOfForce = useOfForce;
     }
 
-    /**
-     * @return tree map of police departments
-     */
-    public TreeMap getNameMap() {return nameMap;}
-
-
+    // Getters
+    public String getName() {return name;}
+    public int getNumOfficers() {return numOfficers;}
+    public int getUseOfForce() {return useOfForce;}
 }
