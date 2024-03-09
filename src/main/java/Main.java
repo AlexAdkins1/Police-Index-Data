@@ -75,11 +75,12 @@ public class Main {
         String input = in.next();
         in.nextLine();
         String file = null;
+        System.out.println();
+
         if (input.equals("1")) {file = Main.FILE2020;} else if (input.equals("2")) {file = Main.FILE2021;} else if (input.equals("3")) {file = Main.FILE2022;} else {
             System.out.println("Invalid Input: \"" + input + "\"");
             System.exit(-1);
-        }
-        try {
+        } try {
             main.createForceMap(new File("src\\data\\" + file));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -88,6 +89,9 @@ public class Main {
 
         System.out.print("Type PD name (Press 1 for all data): ");
         input = in.nextLine();
+        in.close();
+        System.out.println();
+
         if (in.equals("1")) {
             for (Map.Entry<String, TreeMap<ForceType, Integer>> entry: main.getForceMap().entrySet()) {
                 String key = entry.getKey();
@@ -95,14 +99,12 @@ public class Main {
                 System.out.println("\t" + key + ": \n\t" + value);
             } 
         } else {
-            try {
-                System.out.println(input);
-                System.out.println(main.getForceMap().get(input));
-            } catch (ClassCastException e) {
-                e.printStackTrace();
-                System.out.println("PD not found");
+            TreeMap<ForceType, Integer> result = main.getForceMap().get(input);
+            if (result == null) {
+                System.out.println("Invalid Police Department: \"" + input + "\"\n");
                 System.exit(-1);
             }
+            System.out.println(input + "\n" + result);
         }
     }
 }
