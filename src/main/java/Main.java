@@ -70,17 +70,39 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        String CURRENTFILE = FILE2022; // for file change
+        Scanner in = new Scanner(System.in);
+        System.out.print("Press 1 for 2020, 2 for 2021, 3 for 2022: ");
+        String input = in.next();
+        in.nextLine();
+        String file = null;
+        if (input.equals("1")) {file = Main.FILE2020;} else if (input.equals("2")) {file = Main.FILE2021;} else if (input.equals("3")) {file = Main.FILE2022;} else {
+            System.out.println("Invalid Input: \"" + input + "\"");
+            System.exit(-1);
+        }
         try {
-            main.createForceMap(new File("src\\data\\" + CURRENTFILE));
+            main.createForceMap(new File("src\\data\\" + file));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("Wah Wah");
         }
-        for (Map.Entry<String, TreeMap<ForceType, Integer>> entry: main.getForceMap().entrySet()) {
-            String key = entry.getKey();
-            TreeMap<ForceType, Integer> value = entry.getValue();
-            System.out.println(key + ": \n" + value);
+
+        System.out.print("Type PD name (Press 1 for all data): ");
+        input = in.nextLine();
+        if (in.equals("1")) {
+            for (Map.Entry<String, TreeMap<ForceType, Integer>> entry: main.getForceMap().entrySet()) {
+                String key = entry.getKey();
+                TreeMap<ForceType, Integer> value = entry.getValue();
+                System.out.println("\t" + key + ": \n\t" + value);
+            } 
+        } else {
+            try {
+                System.out.println(input);
+                System.out.println(main.getForceMap().get(input));
+            } catch (ClassCastException e) {
+                e.printStackTrace();
+                System.out.println("PD not found");
+                System.exit(-1);
+            }
         }
     }
 }
