@@ -1,5 +1,5 @@
 public enum ForceType {
-    Total,
+    TOTAL,
     TotalReported,
     DisplayedFirearm,
     DischargedFirearm,
