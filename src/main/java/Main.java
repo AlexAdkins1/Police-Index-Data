@@ -87,12 +87,12 @@ public class Main {
             System.out.println("Wah Wah");
         }
 
-        System.out.print("Type PD name (Press 1 for all data): ");
+        System.out.print("Type PD name (Press enter for all data): ");
         input = in.nextLine();
         in.close();
         System.out.println();
 
-        if (in.equals("1")) {
+        if (input.isBlank()) {
             for (Map.Entry<String, TreeMap<ForceType, Integer>> entry: main.getForceMap().entrySet()) {
                 String key = entry.getKey();
                 TreeMap<ForceType, Integer> value = entry.getValue();
