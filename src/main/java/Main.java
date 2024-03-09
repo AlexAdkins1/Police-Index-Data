@@ -81,7 +81,8 @@ public class Main {
             System.out.println("Invalid Input: \"" + input + "\"");
             System.exit(-1);
         } try {
-            main.createForceMap(new File("src\\data\\" + file));
+            String pathSeparator = System.getProperty("file.separator");
+            main.createForceMap(new File("src" + pathSeparator + "data" + pathSeparator + file));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("Wah Wah");
